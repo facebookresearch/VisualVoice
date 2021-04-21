@@ -224,4 +224,4 @@ python evaluateSeparation.py --results_dir test/id06688_akPwstwDxjE_00023VSid086
 Some of the code is borrowed or adapted from [Co-Separation](https://github.com/rhgao/co-separation). The code for the lip analysis network is adapted from [Lipreading using Temporal Convolutional Networks](https://github.com/mpc001/Lipreading_using_Temporal_Convolutional_Networks).
 
 ### Licence
-The code for VisualVoice is CC BY 4.0 licensed, as found in the LICENSE file. 
+The majority of VisualVoice is licensed under CC-BY-NC, however portions of the project are available under separate license terms: license information for Lipreading using Temporal Convolutional Networks is available at https://github.com/mpc001/Lipreading_using_Temporal_Convolutional_Networks/blob/master/LICENSE.
