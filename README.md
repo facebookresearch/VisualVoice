@@ -8,17 +8,17 @@ This repository contains the code for [VisualVoice](https://arxiv.org/pdf/2101.0
 [VisualVoice: Audio-Visual Speech Separation with Cross-Modal Consistency](https://arxiv.org/pdf/2101.03149.pdf)  
  [Ruohan Gao](https://www.cs.utexas.edu/~rhgao/)<sup>1,2</sup> and [Kristen Grauman](http://www.cs.utexas.edu/~grauman/)<sup>1,2</sup> <br/>
  <sup>1</sup>UT Austin, <sup>2</sup>Facebook AI Research  
-In arXiv, 2021  
+In CVPR, 2021  
  
 <br/>
 
 If you find our data or project useful in your research, please cite:
 
-    @article{gao2021VisualVoice,
-      title={VisualVoice: Audio-Visual Speech Separation with Cross-Modal Consistency},
-      author={Gao, Ruohan and Grauman, Kristen},
-        journal={arXiv preprint arXiv:2101.03149},
-        year = {2021}
+    @inproceedings{gao2021VisualVoice,
+      title = {VisualVoice: Audio-Visual Speech Separation with Cross-Modal Consistency},
+      author = {Gao, Ruohan and Grauman, Kristen},
+      booktitle = {CVPR},
+      year = {2021}
     }
 
 
