@@ -125,7 +125,7 @@ wget http://dl.fbaipublicfiles.com/VisualVoice/cross-modal-pretraining/vocal.pth
 python train.py \
 --name exp \
 --gpu_ids 0 \
---batchSize 4 \
+--batchSize 128 \
 --nThreads 32 \
 --display_freq 10 \
 --save_latest_freq 500 \
