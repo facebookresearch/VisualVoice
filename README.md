@@ -216,7 +216,7 @@ python evaluateSeparation.py --results_dir test/id06688_akPwstwDxjE_00023VSid086
 
 1. Audio-Visual speech separation model tailored to 2 speakers (with context): see subdirectory av-separation-with-context/.
 
-2. Audio-Visual speech enhancement code and model coming soon.
+2. Audio-Visual speech enhancement code: see subdirectory av-enhancement.
 
 
 
