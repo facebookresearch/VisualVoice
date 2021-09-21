@@ -1,0 +1,14 @@
+python testRealVideo.py \
+--mouthroi_root ./test_videos/noisy_restaurant/mouthroi/ \
+--facetrack_root ./test_videos/noisy_restaurant/faces/ \
+--audio_path ./test_videos/noisy_restaurant/noisy_restaurant.wav \
+--weights_lipreadingnet checkpoints/exp1/lipreading_best.pth \
+--weights_facial checkpoints/exp1/facial_best.pth \
+--weights_unet checkpoints/exp1/unet_best.pth \
+--weights_vocal checkpoints/exp1/vocal_best.pth \
+--lipreading_config_path configs/lrw_snv1x_tcn2x.json \
+--num_frames 64 --audio_length 2.55 --hop_size 160 --window_size 400 --n_fft 512 \
+--unet_output_nc 2 --normalization --visual_feature_type both \
+--identity_feature_dim 128 --audioVisual_feature_dim 1152 --visual_pool maxpool --audio_pool maxpool --compression_type none \
+--reliable_face --audio_normalization --desired_rms 0.058 --number_of_speakers 1 --mask_clip_threshold 5 --hop_length 2.55 --lipreading_extract_feature --number_of_identity_frames 1 \
+--output_dir_root ./test_videos/noisy_restaurant/

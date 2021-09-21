@@ -1,0 +1,51 @@
+export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+python train.py \
+--name exp1 \
+--gpu_ids 0,1,2,3,4,5,6,7 \
+--batchSize 80 \
+--nThreads 32 \
+--display_freq 10 \
+--save_latest_freq 500 \
+--niter 1 \
+--validation_on True \
+--validation_freq 500 \
+--validation_batches 20 \
+--num_batch 85000 \
+--lr_steps 60000 80000 \
+--coseparation_loss_weight 0.01 \
+--mixandseparate_loss_weight 1 \
+--crossmodal_loss_weight 0.01 \
+--lr_lipreading 0.00001 \
+--lr_facial_attributes 0.00001 \
+--lr_unet 0.0001 \
+--lr_vocal_attributes 0.00001 \
+--num_frames 64 \
+--audio_length 2.55 \
+--hop_size 160 \
+--window_size 400 \
+--n_fft 512 \
+--margin 0.5 \
+--weighted_loss \
+--visual_pool maxpool \
+--audio_pool maxpool \
+--optimizer adam \
+--normalization \
+--tensorboard False \
+--mask_loss_type L2 \
+--visual_feature_type both \
+--unet_input_nc 2 \
+--unet_output_nc 2 \
+--compression_type none \
+--mask_clip_threshold 5 \
+--audioVisual_feature_dim 1152 \
+--identity_feature_dim 128 \
+--audio_normalization \
+--noise_weight 2 \
+--offscreen_hdf5_path hdf5/AudioSet/ \
+--lipreading_extract_feature \
+--weights_facial ./pretrained_models/cross-modal-pretraining/facial.pth \
+--weights_vocal ./pretrained_models/cross-modal-pretraining/vocal.pth \
+--lipreading_config_path configs/lrw_snv1x_tcn2x.json \
+--weights_lipreading ./pretrained_models/lipreading_best.pth \
+--data_path hdf5/VoxCeleb2/ \
+|& tee logs/exp1.txt
